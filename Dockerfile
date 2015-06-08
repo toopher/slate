@@ -1,6 +1,6 @@
 FROM ubuntu:trusty
 RUN apt-get update
-RUN apt-get install -yq ruby ruby-dev build-essential
+RUN apt-get install -yq ruby ruby-dev build-essential git
 RUN gem install --no-ri --no-rdoc bundler
 RUN mkdir /app
 RUN mkdir /app/vendor
